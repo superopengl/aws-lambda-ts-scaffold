@@ -1,0 +1,50 @@
+{
+  "name": "aws-lambda-ts-scaffold",
+  "version": "1.0.0",
+  "description": "Empty project scaffold for Amazon Lambda development in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "tsc:clean": "gulp tsc:clean",
+    "tsc": "./node_modules/.bin/tsc || echo done",
+    "zip": "npm run tsc && gulp zip",
+    "gulp": "gulp",
+    "test": "mocha -r ts-node/register specs/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "aws",
+    "amazon",
+    "lambda",
+    "typescript",
+    "startup",
+    "develop",
+    "scaffold"
+  ],
+  "author": "mr.shaojun@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "0.0.7",
+    "@types/chai": "^3.5.1",
+    "@types/es6-promise": "0.0.32",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.5",
+    "chai": "^3.5.0",
+    "cross-env": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-shell": "^0.6.3",
+    "gulp-zip": "^4.0.0",
+    "mocha": "^3.2.0",
+    "mocha-junit-reporter": "^1.13.0",
+    "ts-node": "^2.1.0",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "@schedulino/lambda-logger": "0.0.11",
+    "aws-sdk": "^2.45.0"
+  }
+}
